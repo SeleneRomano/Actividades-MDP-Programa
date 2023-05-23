@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario MDP Programa</title>
+</head>
+<body>
+    <h1> Mar del Plata Programa</h1>
+    <img src="https://th.bing.com/th/id/OIP.NNxWoEA_Zfm3jo1VIP0qiAHaEY?pid=ImgDet&rs=1"
+    title="Mar del Plata Programa"
+    alt="Imagen"
+    />
+     <p>Mar del Plata Programa, es una iniciativa de la Dirección General de Economía del Conocimiento, de la  <strong>Secretaría de Desarrollo Productivo e Innovación del Municipio de General Pueyrredon</strong>, 
+        implementada en colaboración con <strong> UTN, CONSTANA, ATICMA, y ECOLAN</strong>, que se desarrolla en el marco del Plan Estratégico Mar del Plata Ciudad del Conocimiento, con el 
+        objetivo de capacitar entre 500 y 600 jóvenes de la ciudad, en las especialidades de Desarrollador Full Stack.
+     </p>
+     <br/> 
+     
+     <h2> Para más información, <a href="https://www.mardelplata.gob.ar/mardelplataprograma#:~:text=Mar%20del%20Plata%20Programa%2C%20es%20una%20iniciativa%20de,Testing%29%2C%20que%20se%20lanzar%C3%A1%20a%20mediados%20de%20agosto%29.">
+        Click Aquí.</a>
+     </h2>
+     <br/>
+    
+     <h3> ¡Inscribete en nuestra carrera, YA!</h3>
+
+
+    <form>
+         <p> <label for="nombre"> <strong> Nombre: </strong>
+            <input name="nombre" type="text" placeholder="Escribe tu nombre aquí" id="nombre">
+        </label> </p>
+        <br/>
+
+        <p> <label for="apellido"> <strong> Apellido: </strong>
+            <input name="apellido" type="text" placeholder="Escribe tu apellido aquí" id="apellido">
+        </label> </p>
+        <br/>
+
+         <p>  <strong>Género: </strong>
+            <input type="radio" name="genero" value="masculino" checked />Masculino 
+            <input type="radio" name="genero" value="femenino" />Femenino
+        </p>
+        <br/>
+
+         <p> <strong> Edad: </strong>
+            <input type="number" min="18" max="100"/>
+        </p>
+        <br/>
+
+        <p> <strong>País donde reside: </strong>
+        <input list="opciones" name="paises" id="option" />
+        <datalist id="opciones">
+            <option value="Argentina" />
+            <option value="Bolivia" />
+            <option value="Brasil" />
+            <option value="Chile" />
+            <option value="Colombia" />
+            <option value="México" />
+            <option value="Paraguay" />
+            <option value="Perú" />
+            <option value="Uruguay" />
+            <option value="Venezuela" />
+            <option value="Otro" />
+        </datalist>
+        </p>
+        <br/>
+
+        <p> <label for="país"> <strong> En caso de marcar "Otro" Indicar cuál: </strong>
+            <input name="país" type="text" placeholder="Escriba país aquí"  maxlength="50" id="país">
+        </label>
+         </p>
+         <br/> 
+
+         <p> <label for="telefono"> <strong> Número telefónico: </strong>
+            <input tel="telefono" type="text" placeholder="Escribe tu número telefónico aquí" id="telefono">
+        </label>    
+         </p>
+         <br/>
+         
+         <p> <label for="mail"> <strong> Email: </strong>
+            <input  type="email" placeholder="Escribe tu e-mail aquí" id="mail">
+        </label>    
+         </p>
+         <br/>
+
+         <p> <strong>¿Tiene conocimiento sobre programación?</strong>
+            <input type="radio" name="experiencia" value="si" checked /> SI
+            <input type="radio" name="experiencia" value="no" /> NO 
+         </p>  
+         <br/>
+
+         <p> <label for="país"> <strong> En caso de una respuesta afirmativa. Indicar en dónde y hablenos sobre su experiencia: </strong>
+            <br/>
+            <textarea rows="10" name="experiencia" placeholder="Desarrolle aquí"  required> Desarrolle aquí</textarea>
+        </label>
+         </p>
+         <br/> 
+
+         <p> <strong>¿Trabaja?</strong>
+            <input type="radio" name="trabajo" value="si" checked /> SI 
+            <input type="radio" name="trabajo" value="no" /> NO 
+         </p>  
+         <br/>
+
+         <p> <strong> Disponibilidad horaria (Hora Argentina): </strong>
+         </br/>
+            <select name="horario" multiple>
+                <option value=""> Seleccione sus opciones</option>
+                <option value="1"> De 8 a 10 hs</option>
+                <option value="2"> De 14 a 16 hs</option>
+                <option value="3"> De 20:30 a 22:30 hs</option>   
+            </select>
+            </p>
+            <br/>
+
+        <button type="reset">Cancelar</button>
+        <button type="submit"> Enviar Datos </button>
+
+    </form>
+        
+</body>
+</html>
